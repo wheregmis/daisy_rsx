@@ -72,7 +72,7 @@ fn NavBar() -> Element {
                         }
                     }
                     div { class: "navbar-center",
-                        a { class: "btn btn-ghost text-xl", "Dioxus ft. daisyUI" }
+                        Link { class: "btn btn-ghost text-xl", to: Route::Home {}, "Dioxus ft. daisyUI" }
                     }
                     div { class: "navbar-end",
                         button { class: "btn btn-ghost btn-circle",
@@ -113,7 +113,7 @@ fn NavBar() -> Element {
                                     a { "Data Display" }
                                     ul {
                                         li {
-                                            a { "Avatar" }
+                                            Link { to: Route::Avatar {}, "Avatar" }
                                         }
                                     }
                                 }
